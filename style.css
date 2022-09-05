@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3EAE3;
+}
+
+#truc{
+    display: flex;
+    justify-content: center;
+}
+
+.theBody{
+    display: flex;
+    margin: 10% auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    width: 45em;
+
+}
+
+.imageDesk img {
+    width: 20vw;
+}
+
+
+h1{
+    font-family: Fraunces;
+    font-weight: 700;
+
+}
+
+.txt{
+    padding-top: 15px;
+    margin-left: 1.5em;
+    width: 20em;
+
+}
+
+p{
+    font-family: Montserrat;
+    margin: 15px 0;
+    color: #3D8168;
+    font-weight: 500;
+}
+
+#prix{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #3D8168;
+}
+.imageMob{display: none;}
+h2{
+    font-family: Fraunces;
+}
+#prixBar{
+    font-size: .7em;
+}
+
+#prixBar::before{
+    content: '';
+    width: 45px;
+    margin-top: 5px;
+    border: #3D8168 solid .5px;
+    position: absolute;
+}
+
+button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 3em;
+    align-items: center;
+    background-color: #3D8168;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+}
+
+i{
+    width: 1.2em;
+    color: white
+}
+
+@media all and (min-width: 1280px){
+    .imageMob{display: none;}
+    
+}
+
+
+@media all and (min-width: 376px ) {
+
+    .imageDesk img{width: 39vh;}
+    .imageMob{display: none;}
+    
+    .txt{
+        padding-top: 15px;
+        margin-left: 1.5em;
+        width: 20em;
+    
+    }
+    
+
+    button{
+        margin-bottom: 20px ;
+    }
+    
+}
+
+
+
+
+
+
+@media all and (max-width:540px) {
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 700;
+        color: #3D8168;
+        font-size: 1.2em;
+    }
+
+    .imageDesk img {width: 31vh;}
+    
+    .txt{
+        padding-top: 0px;
+        margin-left: 0.8em;
+        width: 20em;
+    }
+    p{
+        font-family: Montserrat;
+        margin: 15px 0;
+        color: #3D8168;
+        font-weight: 500;
+        font-size: 0.8em;
+    }
+        
+    h2{
+        font-family: Fraunces;
+        font-size: 1.1em;
+    }
+    #prixBar{font-size: .7em;}
+    
+}
+
+
+@media all and (max-width:415px) {
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 700;
+        color: #3D8168;
+        font-size: 1em;
+    }
+
+    .imageDesk img {width: 24vh;}
+    
+    .txt{
+        padding-top: 0px;
+        margin-left: 0.8em;
+        width: 20em;
+    }
+    p{
+        margin: 15px 0;
+        font-size: 0.6em;
+    }
+        
+    h2{
+        font-family: Fraunces;
+        font-size: 1.1em;
+    }
+    #prixBar{font-size: .7em;}
+    
+}
+
+
+@media all and (max-width: 375px ) {
+    .theBody{
+        align-items: center;
+        flex-direction: column;
+        margin: 10% 20px;
+    }
+    .imageDesk{display: none;}
+    .imageMob{display:contents ;width: 100%;}
+    .imageMob img {width: 100%;}
+    
+    .txt{
+        width: 70%;
+        padding-top: 15px;
+        margin-left: 0;
+    }
+
+    button{margin-bottom: 20px ;}
+    
+    h1{font-size: 1.7em;}
+
+    p{font-size: 1em;}
+        
+    h2{font-size: 1.4em;}
+
+    #prixBar{font-size: .7em;}
+}
+
+
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url(fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
